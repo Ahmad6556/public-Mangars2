@@ -6,7 +6,8 @@ const articleSchema = new Schema({
   name: String,
   orders: String,
   date: Date,
-  YNG: String
+  YNG: String,
+  id: String
 });
 
 

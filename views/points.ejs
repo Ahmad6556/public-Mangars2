@@ -10,7 +10,7 @@
   <meta name="description" content="" />
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
   <meta name="generator" content="Hugo 0.112.5" />
-  <title>معلومات <%= item.name %></title>
+  <title>RAQ - إضافة عضو</title>
 
   <link href="/bootstrap.min.css" rel="stylesheet" />
 
@@ -177,13 +177,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">الصفحة الرئيسية</a>
+                <a class="nav-link " aria-current="page" href="/">الصفحة الرئيسية</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/add">إضافة</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/points">النقاط</a>
+                <a class="nav-link disabled" href="/points">النقاط</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/ordersSS">الطلبات</a>
@@ -192,79 +192,99 @@
           </div>
         </div>
       </nav>
-      <center>
-        <h3>
-          الإسم: <%= item.name %>
-        </h3>
-        <h3>
-          الإنذارات: <%= item.dangers %>
-        </h3>
-        <h3>
-          الوضيفة: <%= item.job %>
-        </h3>
-        <h3>
-          المنصة: <%= item.pads %>
-        </h3>
-        <h3>
-          اسم القناة: <%= item.nameChanel %>
-        </h3>
-        <h3>
-          الوضيفة القديمة: <%= item.lastJob %>
-        </h3>
-        <h3>
-          رقم الهاتف: <a href="tel:+<%= item.PhoneNum %>">
-            <%= item.PhoneNum %>
-          </a>
-        </h3>
-        <h3>
-          النقاط: <%= item.points %>
-        </h3>
-        <h3>
-          الرابط الخاص: <a href="https://raq-users-data.onrender.com/data/<%= item._id %>">هنا</a>
-        </h3>
-        <h3>
-          سنة الميلاد: <%= item.dateYear %>
-        </h3>
-        <h3>
-          الأرباح: <%= item.profits %>
-        </h3>
-        <h3>
-          للموضف: <%= 70/100*item.profits %>
-        </h3>
-        <h3>
-          للفريق: <%= 30/100*item.profits %>
-        </h3>
 
-        <form action="/">
-          <button data-bs-toggle="tooltip" data-bs-title="حذف" data-bs-placement="top"
-            class="btn btn-danger btn-sm create" onclick="Delete()" data-linkid="<%= item._id %>">
-            🗑
-          </button>
-        </form>
 
-      </center>
 
-    </section>
+      <nav>
+
+        <div class="row my-4 mx-1">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#top-top">الرتب العليا</a>
+              <a class="list-group-item list-group-item-action" href="#mange">الإدارة</a>
+              <a class="list-group-item list-group-item-action" href="#hard-gamers">الاعبين المحترفين</a>
+              <a class="list-group-item list-group-item-action" href="#coders">المبرمجين</a>
+              <a class="list-group-item list-group-item-action" href="#creators">صناع المحتوى</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+              class="scrollspy-example">
+              <h4 id="top-top">الرتب العليا</h4>
+              <h5>مساعد مؤسس: 500,000<br>
+                مدير عام: 250,000<br>
+                نائب مدير عام: 125,000<br>
+              </h5>
+              <h4 id="mange">الإدارة</h4>
+              <h5>
+                مساعد مؤسس: ١٤٤,٣٢٠<br>
+                مدير عام: ٧٢,١٦٠<br>
+                نائب مدير عام: 36,080<br>
+                مدير الإدارة: 23,040<br>
+                نائب مدير الإدارة: 11,520<br>
+                مدير صناع المحتوى: 5,760<br>
+                نائب مدير صناع المحتوى: 2,880<br>
+                إداري: 1440<br>
+                مساعد إداري: 720<br>
+                مساعد مساعدين: 360<br>
+              </h5>
+              <h4 id="hard-gamers">الاعبين المحترفين</h4>
+              <h5>
+                مساعد مؤسس: 368,640<br>
+                مدير عام: 184,320<br>
+                نائب مدير عام: 96,160<br>
+                مدير الاعبين المحترفين: 46,080<br>
+                نائب مدير الاعبين المحترفين: 23,040<br>
+                محدد بطولات: 11,520<br>
+                نائب محدد بطولات: 5,760<br>
+                قائد الاعبين العام: 2,880<br>
+                قائد الاعبين الخاص + أسم العبة في خانة المنصة المنصة: 1,440<br>
+                الاعبين المحترفين + أسم العبة في خانة المنصة المنصة: 720<br>
+                الاعبين المحترفين احتياط + أسم العبة في خانة المنصة المنصة: 360<br>
+              </h5>
+              <h4 id="coders">المبرمجين</h4>
+              <h5>
+                مدير المبرمجين: 10240<br>
+                نائب مدير المبرمجين: 5120<br>
+                مشرف عام: 2560<br>
+                نائب مشرف: 1280<br>
+                رئيس الأدارة البرمجة: 640<br>
+                نائب رئيس الآدارة: 320<br>
+                <br>
+                --> قسم التطبيقات<br>
+                --> --> مدير التطبيقات: 160<br>
+                --> --> مبرمج تطبيقات اساس: 80<br>
+                --> --> مبرمج تطبيقات: 40<br>
+                --> --> مساعد مبرمج تطبيقات: 20<br>
+                <br>
+                --> قسم المواقع<br>
+                --> --> مدير المواقع: 160<br>
+                --> --> مبرمج مواقع اساس: 80<br>
+                --> --> مبرمج مواقع: 40<br>
+                --> --> مساعد مبرمج مواقع: 20<br>
+              </h5>
+              <h4 id="creators">صناع المحتوى</h4>
+              <h5>
+                مدير صناع المحتوى: 640<br>
+                نائب مدير صناع المحتوى: 320<br>
+                صانع محتوى: 160<br>
+                مساعد صانع محتوى: 80<br>
+                محرر: 40<br>
+                مساعد محرر: 20<br>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </nav>
+
 
     </section>
   </main>
+  <script src="bootstrap.bundle.min.js"></script>
 
-  <script src="/bootstrap.bundle.min.js"></script>
+  <script src="sidebars.js"></script>
 
-  <script src="/sidebars.js"></script>
-
-  <script src="/main.js"></script>
-
-  <script>
-    const RaqId = document.querySelector(".create").getAttribute("data-linkid")
-    function Delete() {
-      fetch(`/data/${RaqId}`, { method: "Delete" })
-        .than(response => response.json())
-        .than(data => console.log(data))
-        .catch((err) => { console.log(err) })
-    }
-  </script>
-
+  <script src="main.js"></script>
 </body>
 
 </html>

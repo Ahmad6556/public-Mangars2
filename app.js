@@ -210,6 +210,10 @@ app.delete("/order/:id", (req, res) => {
     .catch((err) => { console.log(err) });
 })
 
+app.get("/points", (req, res) => {
+  res.render("points")
+})
+
 /*coming soon
 
 app.get('/edit/:id', (req, res) => {

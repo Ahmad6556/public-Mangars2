@@ -220,32 +220,81 @@
 
             <label class="mb-1" for="job">الوظيفة</label>
             <select style="width: 200px;" class="text form-select mb-3" type="text" id="job" name="job">
-              <option value="<%= item.job %>">
+              <option selected value="<%= item.job %>">
                 <%= item.job %>
               </option>
-              <option value="إداري">إداري</option>
-              <option value="مساعد إداري">مساعد إداري</option>
-              <option value="صانع محتوى">صانع محتوى</option>
-              <option value="مساعد صانع محتوى">مساعد صانع محتوى</option>
-              <option value="مساعد مساعدين">مساعد مساعدين</option>
-              <option value="محرر">محرر</option>
-              <option value="مساعد محرر">مساعد محرر</option>
-              <option value="انتظار">انتظار</option>
-
+              <optgroup label="الإدارة">
+                <option value="إداري">إداري</option>
+                <option value="مساعد إداري">مساعد إداري</option>
+                <option value="مساعد مساعدين">مساعد مساعدين</option>
+              </optgroup>
+              <optgroup label="الاعبين المحترفين">
+                <option value="محدد بطولات">محدد بطولات</option>
+                <option value="نائب محدد بطولات">نائب محدد بطولات</option>
+                <option value="قائد الاعبين العام">قائد الاعبين العام</option>
+                <option value="قائد الاعبين الخاص">قائد الاعبين الخاص</option>
+                <option value="الاعبين المحترفين">الاعبين المحترفين</option>
+                <option value="الاعبين المحترفين احتياط">الاعبين المحترفين احتياط</option>
+              </optgroup>
+              <optgroup label="البرمجة">
+                <option value="مشرف عام">مشرف عام</option>
+                <option value="نائب مشرف عام">نائب مشرف عام</option>
+                <option value="رئيس الأدارة">رئيس الإدارة</option>
+                <option value="نائب رئيس الآدارة">نائب رئيس الإدارة</option>
+              <optgroup label="التطبيقات">
+                <option value="مبرمج تطبيقات">مبرمج تطبيقات</option>
+                <option value="مساعد مبرمج تطبيقات">مساعد مبرمج تطبيقات</option>
+              </optgroup>
+              <optgroup label="المواقع">
+                <option value="مبرمج مواقع">مبرمج مواقع</option>
+                <option value="مساعد مبرمج مواقع">مساعد مبرمج مواقع</option>
+              </optgroup>
+              </optgroup>
+              <optgroup label="صناع المحتوى">
+                <option value="صانع محتوى">صانع محتوى</option>
+                <option value="مساعد صانع محتوى">مساعد صانع محتوى</option>
+                <option value="محرر">محرر</option>
+                <option value="مساعد محرر">مساعد محرر</option>
+              </optgroup>
             </select>
             <label class="mb-1" for="lastJob">الوضيفة القديمة</label><br>
             <select style="width: 200px;" class="text form-select" type="text" id="lastJob" name="lastJob">
-              <option value="<%= item.lastJob %>">
+              <option selected value="<%= item.lastJob %>">
                 <%= item.lastJob %>
               </option>
-              <option value="إداري">إداري</option>
-              <option value="مساعد إداري">مساعد إداري</option>
-              <option value="صانع محتوى">صانع محتوى</option>
-              <option value="مساعد صانع محتوى">مساعد صانع محتوى</option>
-              <option value="مساعد مساعدين">مساعد مساعدين</option>
-              <option value="محرر">محرر</option>
-              <option value="مساعد محرر">مساعد محرر</option>
-              <option value="لا يوجد">لا يوجد</option>
+              <optgroup label="الإدارة">
+                <option value="إداري">إداري</option>
+                <option value="مساعد إداري">مساعد إداري</option>
+                <option value="مساعد مساعدين">مساعد مساعدين</option>
+              </optgroup>
+              <optgroup label="الاعبين المحترفين">
+                <option value="محدد بطولات">محدد بطولات</option>
+                <option value="نائب محدد بطولات">نائب محدد بطولات</option>
+                <option value="قائد الاعبين العام">قائد الاعبين العام</option>
+                <option value="قائد الاعبين الخاص">قائد الاعبين الخاص</option>
+                <option value="الاعبين المحترفين">الاعبين المحترفين</option>
+                <option value="الاعبين المحترفين احتياط">الاعبين المحترفين احتياط</option>
+              </optgroup>
+              <optgroup label="البرمجة">
+                <option value="مشرف عام">مشرف عام</option>
+                <option value="نائب مشرف عام">نائب مشرف عام</option>
+                <option value="رئيس الأدارة">رئيس الإدارة</option>
+                <option value="نائب رئيس الآدارة">نائب رئيس الإدارة</option>
+              <optgroup label="التطبيقات">
+                <option value="مبرمج تطبيقات">مبرمج تطبيقات</option>
+                <option value="مساعد مبرمج تطبيقات">مساعد مبرمج تطبيقات</option>
+              </optgroup>
+              <optgroup label="المواقع">
+                <option value="مبرمج مواقع">مبرمج مواقع</option>
+                <option value="مساعد مبرمج مواقع">مساعد مبرمج مواقع</option>
+              </optgroup>
+              </optgroup>
+              <optgroup label="صناع المحتوى">
+                <option value="صانع محتوى">صانع محتوى</option>
+                <option value="مساعد صانع محتوى">مساعد صانع محتوى</option>
+                <option value="محرر">محرر</option>
+                <option value="مساعد محرر">مساعد محرر</option>
+              </optgroup>
             </select>
 
 

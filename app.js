@@ -37,7 +37,7 @@ mongoose
   .connect("mongodb+srv://Ahmad_RAQ:1w3r5y7i8@cluster0.wrxv6um.mongodb.net/?retryWrites=true&w=majority")
   .then(result => {
     app.listen(port, () => {
-      console.log(`RUN! Host`)
+      console.log(`Example app http://localhost:${port}/`)
     })
   })
   .catch(err => {
